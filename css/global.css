@@ -1,0 +1,100 @@
+:root {
+    --accent-color: #2C9FFF;
+    --background: #f3f7ff;
+    --transition: all .4s;
+}
+
+
+.body {
+    font-family: "Golos Text", sans-serif;
+    /* font-size: 16px;
+    font-weight: 400;*/
+    color: rgb(37, 32, 31);
+    background: #fff;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+.body--opened-menu {
+    overflow: hidden;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.nav__items {}
+
+.nav__link {
+    display: block;
+    padding: 5px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.button {
+    width: 100%;
+    max-width: 302px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 15px;
+
+    border-radius: 100px;
+    background: var(--accent-color);
+
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.5;
+    height: 80px;
+    font-size: 20px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
